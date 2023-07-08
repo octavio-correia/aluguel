@@ -7,7 +7,6 @@
 
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-<script src="script.js"></script>
 
 <!--FONTE-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,22 +16,54 @@
 </head>
 <body>
     <header>
+        <div class="assist"></div>
         <h1>Hondo's Ships</h1>
+        <a href="#"><img class="casinha" src="imagens/logoHouse.png" alt=""></a>
     </header>
 
 <div class="faixa">
+
+    <button class="tras"  onclick="tras()"></button>
+
     <div class="containerBase">
         <div class="imagens" id="img">
             <img src="imagens/xwing.png" alt="">
             <img src="imagens/awing.jpeg" alt="">
             <img src="imagens/ywing.jpeg" alt="">
-            <img src="imagens/tiefighter.jpeg" alt="">
+            <img src="imagens/tiefighter.jpg" alt="">
             <img src="imagens/tiebomber.jpeg" alt="">
             <img src="imagens/tieadvanced.jpeg" alt="">
         </div>    
     </div>
+
+    <button class="frente" onclick="frente()"></button>
+
 </div>
 <div class="faixa2"></div>
+
+<script>
+    const imgs = document.getElementById("img")
+    const img = document.querySelectorAll("#img img")
+    
+    var idx = 0
+    
+    function frente() {
+        idx++
+        if (idx > img.length - 1) {
+            idx = 0
+        }
+    
+        imgs.style.transform = `translateX(${-idx * 350}px)`
+    }
+    
+    function tras() {
+        idx--
+        if (idx < 0) {
+            idx = img.length - 1
+        }
+    
+        imgs.style.transform = `translateX(${-idx * 350}px)`
+    }</script>
 
 </body>
 </html>
