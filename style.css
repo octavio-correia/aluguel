@@ -1,9 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.faixa{
+body {
+    background-image: url(imagens/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    padding: 5px;
+
+    background-color: rgb(0, 0, 48);
+    border-bottom: 5px solid black;
+
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.faixa {
     margin-top: 15%;
     height: 50px;
     background-color: rgb(0, 0, 48);
@@ -13,7 +33,7 @@
 
 }
 
-.faixa2{
+.faixa2 {
     height: 15px;
     background-color: brown;
     box-shadow: 2px 2px 4px black;
@@ -24,8 +44,8 @@
     border: 4px solid black;
     box-shadow: 2px 2px 4px rgb(0, 0, 0);
     overflow: hidden;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
 }
 
 .imagens {
@@ -38,6 +58,6 @@
 
 img {
     object-fit: cover;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 }

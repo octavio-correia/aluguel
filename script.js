@@ -9,7 +9,7 @@ function frente() {
         idx = 0
     }
 
-    imgs.style.transform = `translateX(${-idx * 300}px)`
+    imgs.style.transform = `translateX(${-idx * 350}px)`
 }
 
 function tras() {
@@ -18,5 +18,5 @@ function tras() {
         idx = img.length - 1
     }
 
-    imgs.style.transform = `translateX(${-idx * 300}px)`
+    imgs.style.transform = `translateX(${-idx * 350}px)`
 }
