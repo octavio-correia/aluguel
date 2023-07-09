@@ -21,7 +21,7 @@ header {
 
     padding: 0px 25px;
 
-    background-color: rgb(0, 0, 48);
+    background: linear-gradient(to left, rgb(0, 0, 48), rgb(0, 0, 0));
     border-bottom: 5px solid black;
 
     text-align: center;
@@ -51,18 +51,18 @@ header {
 
 }
 
-button{
+button {
     border-radius: 360px;
 
     height: 100px;
     width: 100px;
 }
 
-.tras{
+.tras {
     margin-left: 60px;
 }
 
-.frente{
+.frente {
     margin-right: 60px;
 }
 
