@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hondo's</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 
-<!--FONTE-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+    <!--FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <div class="assist"></div>
@@ -21,49 +23,86 @@
         <a href="#"><img class="casinha" src="imagens/logoHouse.png" alt=""></a>
     </header>
 
-<div class="faixa">
+    <div class="faixa">
 
-    <button class="tras"  onclick="tras()"></button>
+        <button class="tras" onclick="tras(), trasTxt()"></button>
 
-    <div class="containerBase">
-        <div class="imagens" id="img">
-            <img src="imagens/xwing.png" alt="">
-            <img src="imagens/awing.jpeg" alt="">
-            <img src="imagens/ywing.jpeg" alt="">
-            <img src="imagens/tiefighter.jpg" alt="">
-            <img src="imagens/tiebomber.jpeg" alt="">
-            <img src="imagens/tieadvanced.jpeg" alt="">
-        </div>    
+        <div class="containerBase">
+            <div class="imagens" id="img">
+                <img src="imagens/xwing.png" alt="">
+                <img src="imagens/awing.jpeg" alt="">
+                <img src="imagens/ywing.jpeg" alt="">
+                <img src="imagens/tiefighter.jpg" alt="">
+                <img src="imagens/tiebomber.jpeg" alt="">
+                <img src="imagens/tieadvanced.jpeg" alt="">
+            </div>
+        </div>
+
+        <button class="frente" onclick="frente(), frenteTxt()"></button>
+
+    </div>
+    <div class="faixa2"></div>
+
+    <div class="containerzao">
+        <div class="containerTexto">
+            <div class="textos" id="txt">
+                <div>
+                    <h1>X-WING</h1>
+                    <div class="precos">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div>A-WING</div>
+                <div>Y-WING</div>
+                <div>TIE FIGHTER</div>
+                <div>TIE BOMBER</div>
+                <div>TIE ADVANCED</div>
+            </div>
+        </div>
     </div>
 
-    <button class="frente" onclick="frente()"></button>
+    <script>
+        const imgs = document.getElementById("img")
+        const img = document.querySelectorAll("#img img")
 
-</div>
-<div class="faixa2"></div>
+        var idx = 0
 
-<script>
-    const imgs = document.getElementById("img")
-    const img = document.querySelectorAll("#img img")
-    
-    var idx = 0
-    
-    function frente() {
-        idx++
-        if (idx > img.length - 1) {
-            idx = 0
+        function frente() {
+            idx++
+            if (idx > img.length - 1) {
+                idx = 0
+            }
+
+            imgs.style.transform = `translateX(${-idx * 350}px)`
         }
-    
-        imgs.style.transform = `translateX(${-idx * 350}px)`
-    }
-    
-    function tras() {
-        idx--
-        if (idx < 0) {
-            idx = img.length - 1
+
+        function tras() {
+            idx--
+            if (idx < 0) {
+                idx = img.length - 1
+            }
+
+            imgs.style.transform = `translateX(${-idx * 350}px)`
         }
-    
-        imgs.style.transform = `translateX(${-idx * 350}px)`
-    }</script>
+
+        const txts = document.getElementById("txt")
+        const txt = document.querySelectorAll("#txt div")
+
+        var idx = 0
+
+        function frenteTxt() {
+            txts.style.transform = `translateX(${-idx * 1000}px)`
+        }
+
+        function trasTxt() {
+            txts.style.transform = `translateX(${-idx * 1000}px)`
+        }
+
+
+    </script>
 
 </body>
+
 </html>

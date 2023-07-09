@@ -21,3 +21,4 @@ function tras() {
 
     imgs.style.transform = `translateX(${-idx * 350}px)`
 }
+
