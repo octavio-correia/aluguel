@@ -100,34 +100,80 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
+
+    height: 500px;
 }
 
 .containerTexto {
     width: 1000px;
-    height: 300px;
+    height: 450px;
     overflow: hidden;
     position: relative;
-  }
-  
-  .textos {
+    
+}
+
+.textos {
     display: flex;
-    height: 100%;
+    height: 70%;
     width: 600%;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .textos div {
-    padding-top: 20px;
+}
+
+.tabela{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.textos div {
 
     width: 100%;
     height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: top;
+    justify-content: space-around;
 
     font-size: 24px;
-    background-color: lightgray;
-  }
+    color: antiquewhite;
+}
+
+.precos {
+    display: flex;
+}
+
+.precos div {
+    border: 1px solid white;
+    width: 30%;
+    height: 100%;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+    margin-top: auto;
+    align-self: flex-end;
+    padding-right: 10px;
+
+}
+
+ul{    
+    padding-left: 35px;
+    font-size: 22px;
+}
