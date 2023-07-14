@@ -1,0 +1,6 @@
+const form = document.querySelector("#form")
+const nome = document.querySelector("#inputNome")
+const profissao = document.querySelector("#inputProfissao")
+const contato = document.querySelector("#inputTelefone")
+const email = document.querySelector("#inputEmail")
+const nave = document.querySelector("#selectNave")

@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orçamento</title>
+
+    <link rel="stylesheet" href="styleOrcamento.css">
+    <script src="scriptOrcamento.js" defer></script>
 </head>
+
 <body>
 
-    <form>
+    <form id="form">
         <fieldset>
             <legend>Orçamento</legend>
 
@@ -16,6 +21,12 @@
 
             <p>Profissão</p>
             <input type="text" name="Profissao" id="inputProfissao">
+
+            <p>Contato</p>
+            <input type="number" name="Telefone" id="inputTelefone">
+
+            <p>E-mail</p>
+            <input type="email" name="Email" id="inputEmail">
 
             <p>Nave</p>
             <select name="Nave" id="selectNave">
@@ -27,9 +38,11 @@
                 <option value="TB">Tie Bomber</option>
                 <option value="TA">Tie Advanced</option>
             </select>
-            
-        </fieldset>       
+            <br>
+            <button type="submit">Enviar</button>
+        </fieldset>
     </form>
 
 </body>
+
 </html>
