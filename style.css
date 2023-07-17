@@ -16,7 +16,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     padding: 0px 25px;
@@ -128,7 +128,7 @@ img {
 }
 
 .tabela h1 {
-    margin: 10px 0;
+    margin: 25px 0;
 }
 
 .textos div {
@@ -200,4 +200,10 @@ ul {
     width: 200px;
     height: 65px;
     border-radius: 25px;
+
+    margin-top: 25px;
+
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Chakra Petch', sans-serif;
 }
