@@ -51,7 +51,7 @@ header {
 
 }
 
-.faixa button{
+.faixa button {
     border-radius: 360px;
     font-size: 30px;
     height: 100px;
@@ -166,7 +166,7 @@ h2 {
     width: 100%;
     height: 45px;
     background-color: rgb(0, 0, 0);
-    
+
     border-radius: 25px;
 }
 
@@ -196,7 +196,7 @@ ul {
     margin-bottom: 20px;
 }
 
-.orcamento button{
+.orcamento button {
     width: 200px;
     height: 65px;
     border-radius: 25px;
@@ -206,4 +206,58 @@ ul {
     font-size: larger;
     font-weight: bolder;
     font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Tela de celular */
+@media screen and (max-width:600px) {
+
+    h1 {
+        font-size: larger;
+    }
+
+    .faixa {
+        margin-top: 100px;
+    }
+
+    .containerBase {
+        border-radius: 360px;
+        border: 4px solid black;
+        box-shadow: 2px 2px 4px rgb(0, 0, 0);
+        overflow: hidden;
+        height: 170px;
+        width: 170px;
+    }
+
+    .imagens {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+        /* utilizado para mover o objeto horizontalmente*/
+    }
+
+
+    img {
+        object-fit: cover;
+        width: 170px;
+        height: 170px;
+    }
+
+
+    .faixa button {
+        border-radius: 360px;
+        font-size: 30px;
+        height: 40px;
+        width: 40px;
+        opacity: 0.3;
+        background-color: rgb(243, 42, 42);
+    }
+
+    .tras {
+        margin-left: 10px;
+    }
+
+    .frente {
+        margin-right: 10px;
+    }
+
 }
