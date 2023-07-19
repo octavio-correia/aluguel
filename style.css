@@ -244,12 +244,24 @@ ul {
 
     .faixa {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
 
 
-    .faixa button {
+    .tras,
+    .frente {
         display: none;
+    }
+
+    .faixa .trasR, 
+    .faixa .frenteR {
+        opacity: 0.3;
+
+        background-color: rgb(165, 8, 8);
+        color: antiquewhite;
+        
+        height: 50px;
+        width: 50px;
     }
 
     .tras {
