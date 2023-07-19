@@ -242,14 +242,14 @@ ul {
         height: 170px;
     }
 
+    .faixa {
+        display: flex;
+        justify-content: center;
+    }
+
 
     .faixa button {
-        border-radius: 360px;
-        font-size: 30px;
-        height: 40px;
-        width: 40px;
-        opacity: 0.3;
-        background-color: rgb(243, 42, 42);
+        display: none;
     }
 
     .tras {
@@ -262,114 +262,5 @@ ul {
 
     .containerzao {
         opacity: 0;
-        margin: 160px 20px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        height: 400px;
     }
-    
-    .containerTexto {
-        width: 320px;
-        height: 450px;
-        overflow: hidden;
-        position: relative;
-    
-    }
-    
-    .textos {
-        display: flex;
-        height: 70%;
-        width: 600%;
-        transition: transform 0.5s ease-in-out;
-    }
-    
-    .tabela {
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-    
-    .tabela h1 {
-        margin: 25px 0;
-    }
-    
-    .textos div {
-    
-        width: 100%;
-        height: 100%;
-    
-        align-items: top;
-        justify-content: space-around;
-    
-        font-size: 24px;
-        color: antiquewhite;
-    }
-    
-    .precos {
-        display: flex;
-    }
-    
-    .precos div {
-        border: 1px solid white;
-        width: 30%;
-        height: 100%;
-    
-        border-radius: 25px;
-    
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    h2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 45px;
-        background-color: rgb(0, 0, 0);
-    
-        border-radius: 25px;
-    }
-    
-    h3 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 100%;
-        height: 45px;
-        background-color: rgb(0, 0, 0);
-        margin-top: auto;
-        align-self: flex-end;
-        padding-right: 10px;
-        border-radius: 25px;
-    
-    }
-    
-    ul {
-        padding-left: 35px;
-        font-size: 22px;
-    }
-    
-    .orcamento {
-        display: flex;
-        justify-content: center;
-    
-        margin-bottom: 20px;
-    }
-    
-    .orcamento button {
-        width: 200px;
-        height: 65px;
-        border-radius: 25px;
-    
-        margin-top: 25px;
-    
-        font-size: larger;
-        font-weight: bolder;
-        font-family: 'Chakra Petch', sans-serif;
-    }
-
 }
