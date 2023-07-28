@@ -91,6 +91,9 @@ header {
     /* utilizado para mover o objeto horizontalmente*/
 }
 
+.frenteR, .trasR{
+    display: none;
+}
 
 img {
     object-fit: cover;
@@ -270,6 +273,10 @@ ul {
 
     .frente {
         margin-right: 10px;
+    }
+
+    .frenteR, .trasR{
+        display: block;
     }
 
     .containerzao {
