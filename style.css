@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 body {
@@ -239,6 +241,10 @@ ul {
         /* utilizado para mover o objeto horizontalmente*/
     }
 
+    .title{
+        color: white;
+        font-size: 30px;
+    }
 
     img {
         object-fit: cover;
