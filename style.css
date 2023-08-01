@@ -285,25 +285,32 @@ ul {
         display: none;
     }
 
-    .containerzaoR {
-        border: 1px solid white;
-        margin: 50px 10px;
+    .containerDoContainerzaoR{
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .containerzaoR {
+        margin: 70px ;
         height: 1000px;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        align-self: center;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
     }
 
     .containerzaoR div {
-        border: 1px solid yellow;
+        border: 1px solid white;
         height: 300px;
-        margin: 10px;
-        width:100%;
+        margin: 5px;
+        width:250px;
+
         overflow: hidden;
         position: relative;
+
+        color: white;
     }
 
     .orcamento {
