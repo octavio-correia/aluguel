@@ -91,7 +91,8 @@ header {
     /* utilizado para mover o objeto horizontalmente*/
 }
 
-.frenteR, .trasR{
+.frenteR,
+.trasR {
     display: none;
 }
 
@@ -256,7 +257,7 @@ ul {
         display: none;
     }
 
-    .faixa .trasR, 
+    .faixa .trasR,
     .faixa .frenteR {
         opacity: 0.3;
 
@@ -275,12 +276,34 @@ ul {
         margin-right: 10px;
     }
 
-    .frenteR, .trasR{
+    .frenteR,
+    .trasR {
         display: block;
     }
 
     .containerzao {
         display: none;
+    }
+
+    .containerzaoR {
+        border: 1px solid white;
+        margin: 50px 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 1000px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .containerzaoR div {
+        border: 1px solid yellow;
+        height: 300px;
+        margin: 10px;
+        width:100%;
+        overflow: hidden;
+        position: relative;
     }
 
     .orcamento {
